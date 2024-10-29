@@ -3,13 +3,12 @@ from threading import Thread
 import os
 
 app = Flask(__name__)
-
 @app.route('/')
 def home():
     return "Bot do Discord ok"
 
 def run():
-    port = int(os.environ.get('PORT', 10000))  # Usa a variável de ambiente PORT
+    port = int(os.environ.get('PORT', 8080))  
     app.run(host="0.0.0.0", port=port)
 
 def keep_alive():
