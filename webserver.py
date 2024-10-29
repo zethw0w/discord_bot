@@ -9,9 +9,12 @@ def home():
     return "Bot do Discord ok"
 
 def run():
-    port = int(os.environ.get('PORT', 8080))  
+    port = int(os.environ.get('PORT', 10000))  # Usa a variável de ambiente PORT
     app.run(host="0.0.0.0", port=port)
 
 def keep_alive():
     t = Thread(target=run)
     t.start()
+
+if __name__ == "__main__":
+    keep_alive()
