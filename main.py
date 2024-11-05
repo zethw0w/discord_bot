@@ -4,7 +4,7 @@ from discord.ext import commands
 import webserver
 
 DISCORD_TOKEN = os.environ["discordkey"]
-MENTIONED_USER_ID = 253893397037842432  # ID do usuário atualizado
+MENTIONED_USER_ID = 1299552067832123422  # ID do usuário atualizado
 
 intents = discord.Intents.default()
 intents.message_content = True
